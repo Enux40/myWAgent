@@ -1,7 +1,7 @@
 # WhatsApp AI Agent: Automated Tech Innovation Updates
 
 ## Overview
-This project is an autonomous AI agent that curates, summarizes, and posts daily technology innovation news updates to a designated WhatsApp Channel. It combines web scraping, AI-powered summarization, and automated scheduling to keep your audience informed with the latest in tech innovation.
+This project is an autonomous AI agent that curates, summarizes, and posts daily technology innovation news updates to a designated WhatsApp Channel. It combines web scraping, AI-powered summarization, automated scheduling, and GitHub repository management to keep your audience informed with the latest in tech innovation while also providing tools for repository management and automation.
 
 ## Features
 - **Automated Web Scraping:** Fetches news from top tech sources (TechCrunch, The Verge, MIT Technology Review).
@@ -30,6 +30,11 @@ myWA-agent/
 ├── .env                 # Environment variables (not tracked in git)
 ├── .gitignore           # Git ignore rules
 ├── main.py              # Entry point for manual testing
+├── demo_complete.py     # Complete feature demonstration
+├── github_demo.py       # GitHub API demonstration
+├── github_repo_manager.py     # Repository creation tool
+├── github_integration_example.py  # Integration examples
+├── test_github_api.py   # Unit tests for GitHub functionality
 ├── requirements.txt     # Python dependencies
 └── README.md            # Project documentation
 ```
@@ -70,6 +75,14 @@ myWA-agent/
    - To create a new GitHub repository:
      ```sh
      python github_repo_manager.py
+     ```
+   - For a complete feature demonstration:
+     ```sh
+     python demo_complete.py
+     # or test specific features:
+     python demo_complete.py github
+     python demo_complete.py whatsapp
+     python demo_complete.py scraper
      ```
    - To start the daily scheduler:
      ```sh
