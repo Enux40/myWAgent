@@ -5,6 +5,7 @@ from src.logger import logger
 
 class WhatsAppAPI:
     def __init__(self):
+        settings.validate_whatsapp_config()
         self.api_url = f"{settings.API_URL}/{settings.CHANNEL_ID}/messages"
         self.headers = {
             "Authorization": f"Bearer {settings.API_TOKEN}",
